@@ -1,0 +1,10 @@
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__
+media
+Django-blog-post-app-env
+
+# Backup files # 
+*.bak 

@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./blog_post_app/
+    # command: python manage.py runserver 0.0.0.0:8000
+    command: gunicorn blog_post_app.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - ./blog_post_app/:/usr/src/app/
+      - static_files:/usr/src/app/static
+    expose:
+      - 8000
+    # ports:
+    #   - 8000:8000
+
+  nginx:
+    build: ./nginx/
+    volumes:
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
+      - static_files:/home/app/static
+    ports:
+      - 80:80
+
+volumes:
+  static_files:
