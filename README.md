@@ -1,17 +1,27 @@
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/anjali307/Django_Blog_Post_App.git
+## Running the Project Locally
 
-Navigate to the project directory:
-cd blog_post_app
+First, clone the repository to your local machine:
 
-Install dependencies:
+```bash
+git clone https://github.com/anjali307/Django_Blog_Post_App.git
+```
+
+Install the requirements:
+
+```bash
 pip install -r requirements.txt
+```
 
-Usage
-Run migrations:
+Create the database:
+
+```bash
 python manage.py migrate
+```
 
-Start the development server:
+Finally, run the development server:
+
+```bash
 python manage.py runserver
+```
+
+The project will be available at **127.0.0.1:8000**.
