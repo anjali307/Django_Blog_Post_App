@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  blogpostapp:
+    image: blogpostapp
+    build:
+      context: .
+      dockerfile: ./Dockerfile
