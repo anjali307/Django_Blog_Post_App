@@ -31,7 +31,7 @@ The project will be available at **127.0.0.1:8000**.
 In this project you ca find DockerFile and Docker.compose file
 
 1) Create Ec2 Instance and connect that with SSH.
-2) Go to the rrot directory which is blog_post_app in that you can see Dockerfile.
+2) Go to the root directory which is blog_post_app in that you can see Dockerfile.
 3) Create Docker image using below command.
    
 ```bash
